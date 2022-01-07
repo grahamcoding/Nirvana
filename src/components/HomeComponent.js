@@ -1,9 +1,7 @@
 import React  from 'react';
 import {Card, CardGroup, CardImg} from 'react-bootstrap'
-import { Link } from 'react-router-dom';
-import HomeCardComponent from './HomeCardComponent'
 
-function Home() {
+const Home = () => {
     return (
         <>
          <div className="container py-5">
@@ -19,7 +17,6 @@ function Home() {
            </div>
         </div>
       </div>
-      <HomeCardComponent/>
       </>
     )
    };

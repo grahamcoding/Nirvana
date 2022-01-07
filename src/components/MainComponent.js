@@ -1,29 +1,16 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import NavigationComponent from './NavigationComponent';
 import HeaderComponent from './HeaderComponent';
 import Home from './HomeComponent';
-import {SERVICES} from '../shared/services'
 
-class MainComponent extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            services: SERVICES
-        };
-    }
-
-render (){
-
+const MainComponent = () => {
     return(
         <div>
             <NavigationComponent/>
             <HeaderComponent/>
-            <Home services={this.state.services}/>
+            <Home/>
         </div>
     )
-}
-
 }
 
 export default MainComponent;
