@@ -20,7 +20,7 @@ export const SERVICES = [
     {
         id: 3,
         name: "Reiki",
-        image: "/assets/images/reikicard.jpg",
+        image: "/assets/images/reikicard.jpeg",
         description: "Traditional Japanese energy healing and balance technique. Reiki help corrrect the energy flow in the body to bring relaxation, balance and self-healing."
     }
 ]

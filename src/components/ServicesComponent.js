@@ -1,61 +1,45 @@
 import React  from 'react';
 import {Card, CardGroup, CardImg} from 'react-bootstrap'
 
-const Services = () => {
+function RenderServicesItem({services}) {
+    return (
+        <Card>
+            <Card.Img variant="top" src={services.image} alt={services.name} />
+                <Card.Body>
+                    <Card.Title>{services.name}</Card.Title>
+                    <Card.Text>
+                    {services.description}
+                    </Card.Text>
+                </Card.Body>
+        </Card>
+    );
+}
+
+function Services(props) {
+   
+    /*services maps the props object into the RenderServices item to display the items as defined in the above template */
+    
+    const services = props.services.map(services => {
+        return (
+            <div key={services.id} className="col-md-5 m-1">
+                <RenderServicesItem services={services} />
+            </div>
+        );
+    });
+   
     return (
         <>
       <div className="container py-5">
-             <div className="row align-items-center justify-content-between bg-light">
-             <div className="col-md p-5">
-             <CardGroup>
-                <Card>
-                    <Card.Img variant="top" src="/assets/images/swedishcard.jpg" />
-                    <Card.Body>
-                    <Card.Title>Swedish Massage</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="/assets/images/deepcard.jpg" />
-                    <Card.Body>
-                    <Card.Title>Deep Tissue Massage</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="/assets/images/stonecard.jpg" />
-                    <Card.Body>
-                    <Card.Title>Hot Stone</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="/assets/images/reikicard.jpeg" />
-                    <Card.Body>
-                    <Card.Title>Reike</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
+         <div className="row align-items-center justify-content-between bg-light">
+             <div className="col-md">
+             <CardGroup className="justify-content-center">
+                {services}
             </CardGroup>
            </div>
         </div>
       </div>
       </>
-    )
-   };
+    );
+   }
    
    export default Services;

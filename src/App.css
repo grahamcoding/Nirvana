@@ -1,7 +1,7 @@
 .Jumbotron {
     background-image: url("./img/jumbo.jpg");
     /* Set a specific height */
-    min-height: 400px;
+    min-height: 100px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -10,6 +10,36 @@
 }
 
 .Mask {
-  background-color: rgba(164, 93, 179, 0.904);
+  background-color: rgba(165, 93, 179, 0.568);
   display: table;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.Footer {
+  background-image: url("./img/jumbo.jpg");
+  /* Set a specific height */
+  min-height: 150px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MaskFoot {
+  background-color: rgba(165, 93, 179, 0.568);
+  display: table;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+.Logo {
+  font-family: 'Moon Dance', cursive;
+  font-size: 40px !important;
+}
+
+.NavbarMenu {
+  font-family: 'Caveat', cursive;
+  font-size: 25px !important;
 }

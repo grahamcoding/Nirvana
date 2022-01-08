@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* Index for site, Renders the whole site as App component to root of Doc*/
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
