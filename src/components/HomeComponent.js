@@ -13,9 +13,9 @@ const Home = () => {
               <p className="lead">
                Nirvana Massage is your local destination for a personalized and complete massage and Reike experience.
                </p>
-           </div>
+             </div>
+          </div>
         </div>
-      </div>
       </>
     )
    };
