@@ -1,5 +1,6 @@
 import React  from 'react';
 import {Card, CardGroup, Collapse, Button, Accordion} from 'react-bootstrap'
+import { Fade } from 'react-animation-components'
 
 function RenderServicesItem({services}) {
     return (
@@ -66,9 +67,11 @@ function Services(props) {
       <div className="container py-5">
          <div className="row align-items-center justify-content-between bg-light p-5">
              <div className="col-md">
-             <CardGroup className="justify-content-center">
-                {services}
-            </CardGroup>
+                <Fade in>
+                <CardGroup className="justify-content-center">
+                 {services}
+               </CardGroup>
+                </Fade>
            </div>
         </div>
       </div>
