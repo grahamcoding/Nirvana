@@ -30,6 +30,7 @@ function CancelPolicyCollapse() {
          <li>$100.00 for 120 Minutes</li>
      </ul>
         <p className='lead'>I can come to you! Add $20.00 per service for in home rate.</p>
+        <p className='lead'>Gift certificates are also available in any amount!</p>
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
