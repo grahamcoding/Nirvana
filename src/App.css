@@ -9,6 +9,19 @@
     background-size: cover;
 }
 
+@media screen and (max-width: 600px) {
+  .Jumbotron {
+    background-image: url("./img/jumbo.jpg");
+    /* Set a specific height */
+    min-height: 50px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
 .Mask {
   background-color: rgba(165, 93, 179, 0.568);
   display: table;
