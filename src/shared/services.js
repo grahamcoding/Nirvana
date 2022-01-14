@@ -15,13 +15,13 @@ export const SERVICES = [
         id: 2,
         name: "Hot Stone Massage",
         image: "/assets/images/stonecard.jpg",
-        description: "Specialized massage using hot stones to apply heat to the muscles to help release deep tension whiles still giving a relaxing experience."
+        description: "Specialized massage using hot stones to apply heat to the muscles to help release deep tension while still giving a relaxing experience."
     },
     {
         id: 3,
         name: "Reiki",
         image: "/assets/images/reikicard.jpeg",
-        description: "Traditional Japanese energy healing and balance technique. Reiki help corrrect the energy flow in the body to bring relaxation, balance and self-healing."
+        description: "Traditional Japanese energy healing and balance technique. Reiki helps correct the energy flow in the body to bring relaxation, balance and self-healing."
     },
     
 ]

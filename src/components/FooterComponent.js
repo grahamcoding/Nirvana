@@ -6,7 +6,7 @@ const Footer = () => {
       <div>
         <div className="float-end mt-3">
           <div className="text-white">
-            <p className="MaskFoot p-2 m-4">© 2020 Copyright Nirvana Massage by Kandi Harapat. <br/ > Website designed & built by Daniel Graham www.grahamcoding.com </p>
+            <p className="MaskFoot p-2 m-4">© 2022 Copyright Nirvana Massage by Kandi Harapat. <br/ > Website designed & built by Daniel Graham www.grahamcoding.com </p>
           </div>
         </div>
       </div>
