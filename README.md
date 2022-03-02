@@ -8,4 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live address
 
-[The website is deployed here](http://www.nirvanamassage111.com)
+[The website is deployed here](https://www.nirvanamassage1111.com/)
